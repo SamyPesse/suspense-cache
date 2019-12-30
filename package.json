@@ -1,0 +1,32 @@
+{
+  "name": "suspense-cache",
+  "version": "0.0.0",
+  "description": "Utility to create caches for React Suspense",
+  "repository": "https://github.com/SamyPesse/suspense-cache.git",
+  "author": "Samy Pessé <samypesse@gmail.com>",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "prepare": "yarn run build",
+    "lint": "tslint --project ./tsconfig.json",
+    "build": "rm -rf ./dist/ && rollup --config rollup.config.js",
+    "test": "jest"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "devDependencies": {
+    "@types/jest": "^24.0.11",
+    "jest": "^24.9.0",
+    "rollup": "^1.7.0",
+    "rollup-plugin-typescript2": "^0.20.1",
+    "ts-jest": "^24.2.0",
+    "tslint": "^5.14.0",
+    "tslint-config-gitbook": "^1.0.0",
+    "typescript": "^3.3.4000"
+  },
+  "dependencies": {}
+}
