@@ -1,6 +1,6 @@
 {
   "name": "suspense-cache",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Utility to create caches for React Suspense",
   "repository": "https://github.com/SamyPesse/suspense-cache.git",
   "author": "Samy Pessé <samypesse@gmail.com>",
