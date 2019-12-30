@@ -10,5 +10,6 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-      - run: npm lint
-      - run: npm test
+      - run: yarn
+      - run: yarn run lint
+      - run: yarn run test
