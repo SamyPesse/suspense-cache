@@ -19,8 +19,8 @@ beforeEach(() => {
 it('should throw a promise if pending', () => {
     try {
         cache.read(1);
-        throw new Error('should not come here')
-    } catch(p) {
+        throw new Error('should not come here');
+    } catch (p) {
         expect(p instanceof Promise).toBe(true);
     }
 });
@@ -29,9 +29,9 @@ it('should no throw a promise if already in cache', async () => {
     try {
         cache.read(1);
         throw new Error('should not come here');
-    } catch(p) {
+    } catch (p) {
         await p;
     }
 
-    expect(cache.read(1)).toEqual(1)
+    expect(cache.read(1)).toEqual(1);
 });

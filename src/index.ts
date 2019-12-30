@@ -24,7 +24,7 @@ export function createCache<Input, Result>(
     }
 
     function clearAll() {
-        cache = {}
+        cache = {};
     }
 
     function clear(input: Input) {
